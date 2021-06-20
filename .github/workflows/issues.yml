@@ -2,9 +2,9 @@ name: Auto Assign to Project(s)
 
 on:
   issues:
-    types: [opened, labeled]
+    types: [opened]
   pull_request_target:
-    types: [opened, labeled]
+    types: [opened]
 env:
   MY_GITHUB_TOKEN: ${{ secrets.ORG_ISSUES_TOKEN }}
 
